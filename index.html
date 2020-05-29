@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="text/javascript" href="js/index.js">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <script src="js/store-data.js"></script>
+</head>
+
+<body>
+    <div class="title">Store Locator</div>
+    <div class="search-container">
+        <div class="search">
+          <input type="text" id="zip-code-input" placeholder="Enter zip" onkeypress="searchStores()"/>
+          <i class="fas fa-search" onclick="searchStores()"></i>
+        </div>
+    </div>
+    <div class="stores-list-container">
+      <div class="stores-list">
+          <div class="store-container">
+              <div class="store-info-container">
+                <div class="store-address">
+                  <span>8480 Beverly Blvd</span>
+                  <span>Los Angeles, CA 90048</span>
+                </div>
+                <div class="store-phone-number">
+                  9847834783
+                </div>   
+              </div>
+            <div class="store-number-container">
+              <div class="store-number">
+                1
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div id="map">
+
+    </div>
+    <script src="js/index.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk
+
+    &callback=initMap">
+    </script>
+    
+</body>
+
+</html>
